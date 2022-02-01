@@ -1,0 +1,31 @@
+$Rubik: ('Regular', 400), ('Medium', 500), ('Bold', 700);
+@each $name, $weight in $Rubik{
+    @font-face {
+        font-family: 'Rubik-#{$name}';
+        src: url('../fonts/Rubik-#{$name}.woff2');
+        font-weight: $weight;
+    }
+}
+$Roboto: ('Regular', 400);
+@each $name, $weight in $Roboto{
+    @font-face {
+        font-family: 'Roboto-#{$name}';
+        src: url('../fonts/Roboto-#{$name}.woff2');
+        font-weight: $weight;
+    }
+}
+$NotoSans:  ('Bold', 700);
+@each $name, $weight in $NotoSans{
+    @font-face {
+        font-family: 'NotoSans-#{$name}';
+        src: url('../fonts/NotoSans-#{$name}.woff2');
+        font-weight: $weight;
+    }
+}
+$Blue : #19BCE4;
+$BlueHov: #0a657c;
+$RubR: 'Rubik-Regular', sans-serif;
+$RubM: 'Rubik-Medium', sans-serif;
+$RubB: 'Rubik-Bold', sans-serif;
+$RobR: 'Roboto-Regular', sans-serif;
+$NotB: 'NotoSans-Bold', sans-serif;

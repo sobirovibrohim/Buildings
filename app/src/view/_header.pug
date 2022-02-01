@@ -1,0 +1,64 @@
+header.header 
+    .header__top
+        .container
+             .header__top-inner    
+                a.header__logo
+                     img(src="./img/Logo.webp", alt="")
+                     span Building
+                nav.nav
+                    ul.nav__list
+                        -var list =["Home", "Services", "About Us",  "Properties", "Contact"]
+                        each item in list
+                            li.nav__item 
+                                a(href="#!").nav__link=item
+                    a.nav__btn(href="#!")  Log in  
+                .nav__menu 
+                        .nav__menu-line 
+
+                 
+
+                            
+    .header__bottom 
+        .header__bottom-shadow
+            .container 
+                .header__bottom-inner 
+                    h1.header__title Find Your Drem House
+                    p.header__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra posuere sem purus enim eleifend habitant arcu, sed.
+                    .header__search 
+                        .header__search-box
+                            a.header__search-location(href="#!") Location 
+                                img(src="./img/arrowdown.webp", alt="")
+                            .header__search-list-wrapper    
+                                ul.header__search-list
+                                    li.header__search-item California
+                                    li.header__search-item New York
+                                    li.header__search-item Alaboma
+                                    li.header__search-item Texas
+                            .header__search-box-output California    
+                        .header__search-box
+                                a.header__search-location(href="#!") Properties 
+                                    img(src="./img/arrowdown.webp", alt="")
+                                .header__search-list-wrapper     
+                                    ul.header__search-list
+                                        li.header__search-item Delux
+                                        li.header__search-item Delux
+                                        li.header__search-item Delux
+                                        li.header__search-item Delux
+                                .header__search-box-output Delux
+                        .header__search-box
+                                a.header__search-location(href="#!") Price 
+                                    img(src="./img/arrowdown.webp", alt="")
+                                .header__search-list-wrapper 
+                                    ul.header__search-list
+                                        li.header__search-item $10,000-$12,0000
+                                        li.header__search-item $12,000-$16,0000
+                                        li.header__search-item $18,000-$20,0000
+                                        li.header__search-item $20,000-$22,0000
+                                .header__search-box-output  $10,000-$12,0000
+                        button.header__search-box.button  Search  
+                                  
+                
+
+
+                    
+                    
